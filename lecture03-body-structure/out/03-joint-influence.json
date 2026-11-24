@@ -1,0 +1,32 @@
+{
+ "reach_deg": [
+  0,
+  -45,
+  45,
+  0,
+  0
+ ],
+ "step_deg": 10,
+ "moves": [
+  {
+   "joint": "shoulder_pan",
+   "move_cm": 4.3
+  },
+  {
+   "joint": "shoulder_lift",
+   "move_cm": 4.1
+  },
+  {
+   "joint": "elbow_flex",
+   "move_cm": 4.8
+  },
+  {
+   "joint": "wrist_flex",
+   "move_cm": 2.4
+  },
+  {
+   "joint": "wrist_roll",
+   "move_cm": 0.7
+  }
+ ]
+}

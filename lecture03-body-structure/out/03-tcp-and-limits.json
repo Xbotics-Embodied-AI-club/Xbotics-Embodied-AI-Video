@@ -1,0 +1,52 @@
+{
+ "home_deg": [
+  -5.0,
+  -102.4000015258789,
+  93.0,
+  64.0999984741211,
+  -1.0,
+  -8.100000381469727
+ ],
+ "tcp_offset_cm": 9.5,
+ "gap_cm": {
+  "0": 0.6,
+  "100": 12.3
+ },
+ "beyond": [
+  {
+   "joint": "shoulder_pan",
+   "side": "upper",
+   "target_deg": 130.0,
+   "read_deg": 110.0,
+   "limit_deg": 110.0
+  },
+  {
+   "joint": "shoulder_lift",
+   "side": "lower",
+   "target_deg": -130.0,
+   "read_deg": -110.0,
+   "limit_deg": -110.0
+  },
+  {
+   "joint": "elbow_flex",
+   "side": "upper",
+   "target_deg": 116.8,
+   "read_deg": 96.8,
+   "limit_deg": 96.8
+  },
+  {
+   "joint": "wrist_flex",
+   "side": "upper",
+   "target_deg": 125.0,
+   "read_deg": 105.0,
+   "limit_deg": 105.0
+  },
+  {
+   "joint": "wrist_roll",
+   "side": "upper",
+   "target_deg": 272.8,
+   "read_deg": 252.8,
+   "limit_deg": 252.8
+  }
+ ]
+}
