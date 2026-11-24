@@ -1,0 +1,143 @@
+{
+ "n_active": 6,
+ "joints": [
+  {
+   "name": "gripper_frame_joint",
+   "type": "fixed",
+   "parent": "gripper_link",
+   "child": "gripper_frame_link"
+  },
+  {
+   "name": "gripper",
+   "type": "revolute",
+   "parent": "gripper_link",
+   "child": "moving_jaw_so101_v1_link",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lower_deg": -10.000004285756797,
+   "upper_deg": 100.00004285756798
+  },
+  {
+   "name": "wrist_roll",
+   "type": "revolute",
+   "parent": "wrist_link",
+   "child": "gripper_link",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lower_deg": -67.2110246172515,
+   "upper_deg": 252.7893417100841
+  },
+  {
+   "name": "wrist_flex",
+   "type": "revolute",
+   "parent": "lower_arm_link",
+   "child": "wrist_link",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lower_deg": -94.99984017946129,
+   "upper_deg": 105.00024553567467
+  },
+  {
+   "name": "elbow_flex",
+   "type": "revolute",
+   "parent": "upper_arm_link",
+   "child": "lower_arm_link",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lower_deg": -96.82986737710912,
+   "upper_deg": 96.82986737710912
+  },
+  {
+   "name": "shoulder_lift",
+   "type": "revolute",
+   "parent": "shoulder_link",
+   "child": "upper_arm_link",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lower_deg": -109.99987525598623,
+   "upper_deg": 100.00004285756798
+  },
+  {
+   "name": "shoulder_pan",
+   "type": "revolute",
+   "parent": "base_link",
+   "child": "shoulder_link",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "lower_deg": -109.99987525598623,
+   "upper_deg": 109.99987525598623
+  },
+  {
+   "name": "world_to_base_link",
+   "type": "fixed",
+   "parent": "world",
+   "child": "base_link"
+  },
+  {
+   "name": "kit_base_plate_joint",
+   "type": "fixed",
+   "parent": "base_link",
+   "child": "kit_base_plate_link"
+  },
+  {
+   "name": "frame_extrusion_joint",
+   "type": "fixed",
+   "parent": "base_link",
+   "child": "frame_extrusion_link"
+  },
+  {
+   "name": "top_camera_mount_joint",
+   "type": "fixed",
+   "parent": "base_link",
+   "child": "top_camera_mount_link"
+  },
+  {
+   "name": "top_camera_optical_joint",
+   "type": "fixed",
+   "parent": "base_link",
+   "child": "top_camera_optical_frame"
+  },
+  {
+   "name": "wrist_camera_mount_joint",
+   "type": "fixed",
+   "parent": "gripper_link",
+   "child": "wrist_camera_mount_link"
+  },
+  {
+   "name": "wrist_camera_optical_joint",
+   "type": "fixed",
+   "parent": "gripper_link",
+   "child": "wrist_camera_optical_frame"
+  },
+  {
+   "name": "finger1_tip_joint",
+   "type": "fixed",
+   "parent": "gripper_link",
+   "child": "finger1_tip"
+  },
+  {
+   "name": "finger2_tip_joint",
+   "type": "fixed",
+   "parent": "moving_jaw_so101_v1_link",
+   "child": "finger2_tip"
+  }
+ ]
+}
