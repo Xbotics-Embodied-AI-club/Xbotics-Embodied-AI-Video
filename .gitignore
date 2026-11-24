@@ -1,9 +1,9 @@
-# 环境、缓存与服务日志，不进 git
+# 环境、缓存、日志、环境检查的画面与录课的工作副本，不进 git
 .venv/
 __pycache__/
 .ipynb_checkpoints/
 .ruff_cache/
-out/*.log
-# 录课时的工作副本与整段录屏
+*.log
+env-check.png
+*-recording.ipynb
 out/rec/
-/*-recording.ipynb

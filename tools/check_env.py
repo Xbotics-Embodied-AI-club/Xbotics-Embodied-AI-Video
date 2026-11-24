@@ -2,7 +2,7 @@
 
     uv run python tools/check_env.py
 
-这四步都过，说明仿真包、物理引擎和 GPU 渲染（SAPIEN 走 Vulkan）都能用。画面存到 `out/00-env-top.png`，要自己看一眼：
+这四步都过，说明仿真包、物理引擎和 GPU 渲染（SAPIEN 走 Vulkan）都能用。画面存到仓库根目录的 `env-check.png`（不进 git），要自己看一眼：
 有桌面、方块、料盒和机械臂才算渲对。
 """
 import logging
@@ -17,7 +17,7 @@ logger = logging.getLogger("check_env")
 ENV_ID = "SO101PickPlaceCube40-v1"
 SEED = 1  # 种子 0 时方块在顶部相机里被机械臂挡住，种子 1 的画面里方块、料盒、机械臂各自分开
 STEPS = 10
-OUT = Path(__file__).resolve().parents[1] / "out" / "00-env-top.png"
+OUT = Path(__file__).resolve().parents[1] / "env-check.png"
 
 
 def main() -> None:
@@ -28,7 +28,6 @@ def main() -> None:
     for _ in range(STEPS):
         obs, _, _, _, _ = env.step(hold)
     top = obs["sensor_data"]["top"]["rgb"][0].cpu().numpy()
-    OUT.parent.mkdir(exist_ok=True)
     matplotlib.image.imsave(OUT, top)
     logger.info("复位并走了 %d 步，顶部相机画面 %s → %s", STEPS, top.shape, OUT)
     env.close()
