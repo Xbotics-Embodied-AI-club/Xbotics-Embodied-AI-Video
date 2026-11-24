@@ -1,6 +1,6 @@
 # Xbotics 具身智能视频课 · 动手代码
 
-具身智能视频课的动手部分：每讲一个文件夹，里面一份 Jupyter notebook，都在星禾 SO-101 仿真（[Xbotics-SO101-Sim](https://github.com/Xbotics-Embodied-AI-club/Xbotics-SO101-Sim)）里做同一个任务：把 4 cm 方块放进料盒，每讲在上一讲的基础上加一层。
+具身智能视频课的动手部分：每讲一个文件夹，里面一份 Jupyter notebook，都在星禾 SO-101 仿真（[Xbotics-SO101-Sim](https://github.com/Xbotics-Embodied-AI-club/Xbotics-SO101-Sim)）里运行。
 
 ## 每讲的 notebook
 
