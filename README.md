@@ -6,6 +6,7 @@
 
 | 文件夹与 notebook | 讲次 | 做什么 |
 | --- | --- | --- |
+| `lecture01-intro/minimal_reach.py` | 第一讲 具身智能导论 | 最小闭环 Demo：从起点每步走一小段，误差小于阈值时停下（纯 Python，不用仿真）；`uv run python lecture01-intro/minimal_reach.py` |
 | `lecture02-system-architecture/02-minimal-loop.ipynb` | 第二讲 机器人系统架构 | 最小闭环：读关节、换算两套单位、比例闭环、故意写错单位与顺序、记录回合 |
 | `lecture03-body-structure/03-robot-model.ipynb` | 第三讲 机器人本体组成与运动结构 | 读机器人模型（URDF）：关节、转轴与限位；逐个转动关节；关节空间到末端空间 |
 | `lecture04-control-kinematics/04-kinematics.ipynb` | 第四讲 机器人控制与运动学 | 正运动学与逆运动学：让夹爪停到方块正上方 |
