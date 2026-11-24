@@ -21,13 +21,6 @@
    "limit_deg": 110.0
   },
   {
-   "joint": "shoulder_lift",
-   "side": "lower",
-   "target_deg": -130.0,
-   "read_deg": -110.0,
-   "limit_deg": -110.0
-  },
-  {
    "joint": "elbow_flex",
    "side": "upper",
    "target_deg": 116.8,
@@ -36,10 +29,10 @@
   },
   {
    "joint": "wrist_flex",
-   "side": "upper",
-   "target_deg": 125.0,
-   "read_deg": 105.0,
-   "limit_deg": 105.0
+   "side": "lower",
+   "target_deg": -115.0,
+   "read_deg": -95.0,
+   "limit_deg": -95.0
   },
   {
    "joint": "wrist_roll",
